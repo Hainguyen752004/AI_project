@@ -1,5 +1,9 @@
 ## Introduction
-This branch is for an A.I project focusing on object detection using Yolov8 model. The script is designed to detect objects appearing in videos such as vehicles and person, record the appearance and disappearance time of the objects and write to a json file.
+This branch is for an A.I project focusing on object detection using Yolov8m model. The script is designed to detect objects appearing in videos such as vehicles and person, record the appearance and disappearance time of the objects and write to a json file.
+
+## Some Example
+
+
 
 ## Installation
 1. Download the source code from this branch in the repository.
@@ -28,7 +32,7 @@ video_path = 'YOUR_INPUT_VIDEO.mp4'
 5. **collections.defaultdict**: Class to create default dictionaries where a default value is provided if the key does not exist.
 
 ## Warning
-The output of this code marks the objects that appear in English (Car 1, Person 1) and outputs the result in a Json file in Vietnamese at line
+1. The output of this code marks the objects that appear in English (Car 1, Person 1) and outputs the result in a Json file in Vietnamese at line
 
 ```python
 ten_lop = {
@@ -41,6 +45,8 @@ ten_lop = {
 ```
 
 You can keep it as is or change it as needed.
+
+2. This code uses CPU, if your hardware is not guaranteed, please consider before using this code.
 
 ## Authors
 - **Nguyen Phuoc Dai**
