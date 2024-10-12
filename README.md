@@ -26,6 +26,7 @@ This repository provides you with a detailed guide on how to training and build 
 
 ## Result
 ![Demo 1](result/image.jpg)
+https://github.com/trungdinh22/License-Plate-Recognition/raw/main/result/image.jpg
 
 ![Vid](result/video_1.gif)
 
