@@ -1,14 +1,51 @@
-# Chú thích về code
+## Introduction
+This branch is for an A.I project focusing on object detection using Yolov8 model. The script is designed to detect objects appearing in videos such as vehicles and person, record the appearance and disappearance time of the objects and write to a json file.
 
-**Code chạy trên mô hình YOLOv8**
+## Installation
+1. Download the source code from this branch in the repository.
+2. If you want to change the Yolov8m model to another model, change at the line:
 
-Do chạy trên YOLOv8 nên sẽ tiến hành phân tích theo từng Frame nên nếu muốn cho ra kết quả nhanh nhất thì có thể lựa chọn video_input có fps từ 25-30fps sẽ tiết kiệm được thời gian rất nhiều.
+```python
+model_path = 'YOUR MODEL'
+#Example: model_path = 'yolov8m.pt'    
+```
+3. If you want to run the code with your input, change at line:
 
-**Về file Code**
+```python
+video_path = 'YOUR_INPUT_VIDEO.mp4'
+#video_path = 'video_test.mp4'   
+```
 
-Trong file code có 1 dòng sửa tất cả các xe như: xe tải, xe máy,... về chung là xe (car) có thể mở tùy nhu cầu (Mặc định là đang tắt).
-Hiện tại các lớp ID vật thể đang để tiếng Anh do còn bị lỗi Font tiếng Việt (Car 1, Person 1).
+## Features 
+- Analyze vehicle and person objects appearing in the input video and number them in order. 
+- Record the appearance and disappearance time of objects in json file.
 
-**Về file Json**
+## Libraries Used
+1. **os**: Prevents potential errors related to loading libraries on some systems.
+2. **cv2**: For image processing and computer vision.
+3. **json**: For encoding and decoding JSON data.
+4. **ultralytics.YOLO**: Used to deploy the YOLO object detection model.
+5. **collections.defaultdict**: Class to create default dictionaries where a default value is provided if the key does not exist.
 
-File Json đã sửa thành các giá trị thành tiếng Việt, giá trị Box không được sửa thành tiếng Việt do cảm thấy không cần thiết.
+## Warning
+The output of this code marks the objects that appear in English (Car 1, Person 1) and is rewritten in Vietnamese at line:
+
+```python
+ten_lop = {
+            'person': 'Người',
+            'car': 'Ô tô',
+            'truck': 'Xe tải',
+            'bus': 'Xe buýt',
+            'motorcycle': 'Xe máy'
+            }.get(info['Tên lớp'], info['Tên lớp']) 
+```
+
+You can keep it as is or change it as needed.
+
+## Authors
+- **Nguyen Phuoc Dai**
+- **Nguyen Quoc Nhat**
+- **Lai Ngoc Mai**
+
+## License
+Thank you for your interest and use of our project!
