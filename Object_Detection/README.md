@@ -2,7 +2,17 @@
 This branch is for an A.I project focusing on object detection using Yolov8m model. The script is designed to detect objects appearing in videos such as vehicles and person, record the appearance and disappearance time of the objects and write to a json file.
 
 ## Some Example
+### Before
+<p align="center">
+    <img src="https://github.com/vlu-lantran/AI_project/blob/Object_Detection_Group2/GIF_Example/Example1_Before.gif?raw=true" width=350>
+    <img src="https://github.com/vlu-lantran/AI_project/blob/Object_Detection_Group2/GIF_Example/Example2_Before.gif?raw=true" width=350>
+</p>
 
+### After
+<p align="center">
+    <img src="https://github.com/vlu-lantran/AI_project/blob/Object_Detection_Group2/GIF_Example/Example1_After.gif?raw=true" width=350>
+    <img src="https://github.com/vlu-lantran/AI_project/blob/Object_Detection_Group2/GIF_Example/Example2_After.gif?raw=true" width=350>
+</p>
 
 
 ## Installation
